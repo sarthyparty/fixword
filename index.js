@@ -1,5 +1,4 @@
 const uniqueRandomRange = require("unique-random-range");
-const random = require("random")
 const {passwordStrength} = require('check-password-strength')
 
 var swaps = [
@@ -62,7 +61,7 @@ function swap_letters(pass) {
     
     let options = swaps[pass.charCodeAt(index_to_swap)-97]
 
-    let new_letter=options[random.int(0,options.length-1)]
+    let new_letter=options[uniqueRandomRange(0,options.length-1)()]
 
     new_pass[index_to_swap]=new_letter;
   }
@@ -83,7 +82,7 @@ function get_alt(pass) {
   return new_pass
 }
 
-function get_alts(pass, num) {
+export function get_alts(pass, num) {
   alts = []
   for (let i = 0; i < num; i++) {
     alts.push(get_alt(pass))
@@ -93,5 +92,3 @@ function get_alts(pass, num) {
 }
 
 let password1="dreamteamhype"
-
-module.exports = get_alts
