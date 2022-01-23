@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "node fixword.js"
+run = "node index.js"
