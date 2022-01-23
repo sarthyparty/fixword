@@ -94,4 +94,4 @@ function get_alts(pass, num) {
 
 let password1="dreamteamhype"
 
-exports.get_alts = get_alts;
+module.exports = get_alts
