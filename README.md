@@ -13,3 +13,7 @@ const {get_alts, get_strength }= require("fixword")
 console.log(get_alts("sarthyparty", 5, 0.3))
 console.log(get_strength("NotActuallyMyP4$$"))
 ```
+
+[Chrome Extension](https://github.com/sarthyparty/fixword_ext)
+
+[Website Demo](https://fixword.netlify.app/)
