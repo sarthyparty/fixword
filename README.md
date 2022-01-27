@@ -10,7 +10,8 @@ A nodejs package with a leetspeak randomizer for making usernames unique. Also h
 
 ```
 const {get_alts, get_strength} = require("fixword")
-console.log(get_alts("sarthyparty", 5, 0.3)) // This will return a list of 5 alternative usernames with 30% of its letters swapped for LeetSpeak
+console.log(get_alts("sarthyparty", 5, 0.3)) 
+// This will return a list of 5 alternative usernames with 30% of its letters swapped for LeetSpeak
 console.log(get_strength("NotActuallyMyP4$$"))
 ```
 
