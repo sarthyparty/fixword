@@ -9,7 +9,7 @@ A nodejs package with a leetspeak randomizer for making usernames unique. Also h
 <h2>Usage</h2>
 
 ```
-const {get_alts, get_strength }= require("fixword")
+const {get_alts, get_strength} = require("fixword")
 console.log(get_alts("sarthyparty", 5, 0.3))
 console.log(get_strength("NotActuallyMyP4$$"))
 ```
